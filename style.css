@@ -230,6 +230,64 @@ nav {
     color: var(--text-secondary);
 }
 
+/* Experience Section */
+.timeline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.timeline-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-column h3 {
+    margin-bottom: 1rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 2rem;
+}
+
+.timeline-date {
+    color: var(--accent-color);
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.timeline-list {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.timeline-list li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .timeline-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Portfolio Section */
 .gallery-grid {
     display: grid;
