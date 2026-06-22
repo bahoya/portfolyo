@@ -288,8 +288,35 @@ nav {
 .gallery-item:hover .view-text {
     transform: translateY(0);
 }
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.nav-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: var(--accent-gradient);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+}
+
 .portfolio-category {
     margin-bottom: 3rem;
+    scroll-margin-top: 100px;
 }
 
 .portfolio-category h2 {
@@ -298,19 +325,62 @@ nav {
 
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
     justify-items: center;
 }
 
 .ig-embed {
     width: 100%;
-    max-width: 320px;
-    height: 480px;
+    max-width: 340px;
+    height: 600px;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.3);
     background: transparent;
     border: 1px solid var(--glass-border);
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.app-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.app-card:hover {
+    border-color: var(--accent-color);
+}
+
+.app-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-gradient);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.app-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.app-info p {
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .divider {
