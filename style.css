@@ -288,6 +288,36 @@ nav {
 .gallery-item:hover .view-text {
     transform: translateY(0);
 }
+.portfolio-category {
+    margin-bottom: 3rem;
+}
+
+.portfolio-category h2 {
+    margin-bottom: 1rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.ig-embed {
+    width: 100%;
+    max-width: 320px;
+    height: 480px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    background: transparent;
+    border: 1px solid var(--glass-border);
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    margin: 4rem 0;
+}
 
 /* Contact Section */
 .contact-card {
