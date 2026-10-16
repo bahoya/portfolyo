@@ -1291,8 +1291,9 @@ section {
     word-break: break-all;
 }
 
-.contact-card .cta-button {
+.contact-card .cta-row {
     position: relative;
+    justify-content: center;
     margin-top: 1rem;
 }
 
