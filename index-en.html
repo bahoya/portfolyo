@@ -4,62 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahattin Yaman | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Bahattin Yaman — Advertiser, video editor and developer. First place in the Digital Broadcasting category of TRT's Communicators of the Future Competition.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%238b5cf6'/><text x='50' y='68' font-size='56' font-family='Arial' font-weight='bold' text-anchor='middle' fill='white'>B</text></svg>">
+    <link rel="alternate" hreflang="tr" href="index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="scroll-progress"></div>
+
     <nav>
-        <div class="logo">Bahattin Yaman.</div>
+        <a href="#hero" class="logo">Bahattin Yaman<span>.</span></a>
         <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#award">Award</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="lang-switch">
-            <a href="index.html" class="lang-btn">TR</a>
+        <div class="nav-right">
+            <a href="index.html" class="lang-btn" lang="tr">TR</a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
     <section id="hero">
-        <div class="hero-content">
-            <h1>Designing with <br><span class="highlight">Technology.</span></h1>
-            <p>Hello! I'm Bahattin Yaman. Advertiser, Video Editor, and Developer.</p>
-            <a href="#portfolio" class="cta-button">View My Work</a>
-        </div>
-        <div class="hero-image-container glass-card">
-            <img src="gorseller/profil.jpg" alt="Bahattin Yaman" class="hero-profile-img">
-        </div>
         <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+            <div class="shape shape-1" data-speed="0.12"></div>
+            <div class="shape shape-2" data-speed="0.06"></div>
+            <div class="shape shape-3" data-speed="-0.05"></div>
+        </div>
+        <div class="hero-content">
+            <h1>
+                <span class="split-line"><span>Designing with</span></span>
+                <span class="split-line"><span class="highlight">Technology.</span></span>
+            </h1>
+            <p data-reveal="up" style="--delay: 0.3s">Advertiser, Video Editor, and Developer. I turn ideas into stories, and stories into screens.</p>
+            <div class="cta-row" data-reveal="up" style="--delay: 0.45s">
+                <a href="#portfolio" class="cta-button primary">View My Work</a>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down">
+            <span class="mouse"></span>
+            Scroll
+        </a>
+    </section>
+
+    <section class="hero-photo" aria-label="Bahattin Yaman">
+        <img src="gorseller/web/profil-xl.jpg" alt="Bahattin Yaman" width="1800" height="1718">
+        <div class="hero-caption">
+            <h2>Hi, I'm <span class="highlight">Bahattin.</span></h2>
+            <p>Kocaeli University · Advertising</p>
+        </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-row" data-direction="left">
+            <span>Video Editing</span><span>Graphic Design</span><span>Content Creation</span><span>Mobile Apps</span><span>Social Media</span>
+            <span>Video Editing</span><span>Graphic Design</span><span>Content Creation</span><span>Mobile Apps</span><span>Social Media</span>
+            <span>Video Editing</span><span>Graphic Design</span><span>Content Creation</span><span>Mobile Apps</span><span>Social Media</span>
+        </div>
+        <div class="marquee-row outline" data-direction="right">
+            <span>Advertising</span><span>Digital Broadcasting</span><span>Reels</span><span>Creative Strategy</span><span>Brand Identity</span>
+            <span>Advertising</span><span>Digital Broadcasting</span><span>Reels</span><span>Creative Strategy</span><span>Brand Identity</span>
+            <span>Advertising</span><span>Digital Broadcasting</span><span>Reels</span><span>Creative Strategy</span><span>Brand Identity</span>
+        </div>
+    </div>
+
+    <section class="statement pin" style="--pin-h: 220vh" aria-label="In short">
+        <div class="pin-stage">
+            <p class="statement-text" data-accent="technology,stories">From video editing to graphic design, social media to mobile apps, I bring creative ideas together with technology to craft memorable stories.</p>
         </div>
     </section>
 
     <section id="about">
         <div class="section-container">
-            <h2>About Me</h2>
+            <div class="section-label" data-reveal="left">01 — About Me</div>
+            <h2 class="reveal-heading"><span>Creative ideas, <span class="highlight">technical execution.</span></span></h2>
             <div class="about-grid">
-                <div class="about-text glass-card">
+                <div class="about-text glass-card" data-scrub="rise">
                     <h3>Advertiser, Video Editor & Developer</h3>
-                    <p>Hello! I'm Bahattin Yaman, a 21-year-old 3rd-year Advertising student. I am a content creator utilizing technology and design across a wide spectrum, from video editing to mobile app development. During my education at Kocaeli University, I take an active role in both the management and implementation phases of creative processes. I aim to utilize my technical skills and versatile experiences gained through voluntary club activities and school collaborations in my future work.</p>
-                </div>
-                <div class="skills glass-card">
-                    <h3>Skills</h3>
-                    <div class="skill-tags">
-                        <span>Video Editing</span>
-                        <span>Graphic Design</span>
-                        <span>Mobile App Dev</span>
-                        <span>Content Creation</span>
-                        <span>Adobe Premiere Pro</span>
-                        <span>Adobe Photoshop</span>
-                        <span>Adobe After Effects</span>
+                    <p>Hello! I'm Bahattin Yaman, a 4th-year Advertising student at Kocaeli University's Faculty of Communication. I am a content creator who uses technology and design across a wide spectrum, from video editing to mobile app development. Throughout my education, I take an active role in both the management and execution of creative processes. I aim to bring the technical skills and versatile experience I've gained through volunteer club work and school collaborations into my work.</p>
+                    <div class="stats" data-stagger="0.12">
+                        <div class="stat" data-reveal="up"><strong class="highlight">1</strong><span>Award</span></div>
+                        <div class="stat" data-reveal="up"><strong class="highlight">7+</strong><span>Years of design work</span></div>
+                        <div class="stat" data-reveal="up"><strong class="highlight">4</strong><span>Club & community roles</span></div>
                     </div>
+                </div>
+                <div class="skills glass-card" data-scrub="rise">
+                    <h3>Skills</h3>
+                    <div class="skill-tags" data-stagger="0.06">
+                        <span data-reveal="scale">Video Editing</span>
+                        <span data-reveal="scale">Graphic Design</span>
+                        <span data-reveal="scale">Social Media Management</span>
+                        <span data-reveal="scale">Mobile App Development</span>
+                        <span data-reveal="scale">Content Creation</span>
+                        <span data-reveal="scale">Adobe Premiere Pro</span>
+                        <span data-reveal="scale">Adobe Photoshop</span>
+                        <span data-reveal="scale">Adobe After Effects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="award-scene" class="pin" style="--pin-h: 280vh">
+        <div id="award" class="pin-anchor" style="top: 155vh"></div>
+        <div class="pin-stage">
+            <div class="award-glow"></div>
+            <div class="award-stage">
+                <div class="section-label award-label">02 — Award</div>
+                <div class="award-rank">1.</div>
+                <div class="award-seq">
+                    <span class="award-place">First Place</span>
+                    <h3>TRT Communicators of the Future Competition</h3>
+                    <span class="award-category">Digital Broadcasting · Social Media Management · 2026</span>
+                    <p>With my social media management project, the <strong>Dakikada KPSS</strong> Instagram account, I was awarded <strong>first place</strong> in the Digital Broadcasting category of TRT's Communicators of the Future (Geleceğin İletişimcileri) competition.</p>
+                    <div><a href="https://www.instagram.com/dakikadakpss/" target="_blank" rel="noopener" class="cta-button gold">See @dakikadakpss →</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="press">
+        <div class="section-container">
+            <figure class="award-photo" data-scrub="expand">
+                <img src="gorseller/web/odul-toreni.jpg" alt="Bahattin Yaman receiving the first place award at the TRT Communicators of the Future ceremony" width="1657" height="945" loading="lazy">
+                <figcaption>Receiving the award from jury member Kaan Gülten · TRT Communicators of the Future award ceremony, Ankara</figcaption>
+            </figure>
+
+            <div class="press-title" data-reveal="up">In the Press (Turkish)</div>
+            <div class="press-marquee" data-reveal="up">
+                <div class="press-track">
+                    <a href="https://www.aa.com.tr/tr/gundem/trtnin-gelecegin-iletisimcileri-yarismasinda-oduller-sahiplerini-buldu/4087899" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Anadolu Agency</span>
+                        <h4 lang="tr">TRT'nin "Geleceğin İletişimcileri Yarışması"nda ödüller sahiplerini buldu</h4>
+                        <div class="press-meta"><span>October 14, 2026</span><span class="arrow">→</span></div>
+                    </a>
+                    <a href="https://www.bizimyaka.com/makale/28996640/galip-ataman/trtnin-birincilik-odulu-genc-iletisimci-bahattinin" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Bizim Yaka · Galip Ataman</span>
+                        <h4 lang="tr">TRT'nin Birincilik Ödülü genç iletişimci Bahattin'in</h4>
+                        <div class="press-meta"><span>October 16, 2026</span><span class="arrow">→</span></div>
+                    </a>
+                    <a href="https://www.cagdaskocaeli.com.tr/haber/28979223/trt-gelecegin-iletisimcileri-yarismasinda-zirve-kounun-bahattin-yaman-birinci-oldu" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Çağdaş Kocaeli</span>
+                        <h4 lang="tr">TRT Geleceğin İletişimcileri Yarışması'nda zirve KOÜ'nün: Bahattin Yaman birinci oldu!</h4>
+                        <div class="press-meta"><span>October 14, 2026</span><span class="arrow">→</span></div>
+                    </a>
+                    <a href="https://www.noktagazetesi.com.tr/kocaeli-gundem-haberleri/kocaeli-universitesi-ogrencisinden-trt-yarismasinda-buyuk-basari-389069" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Nokta Gazetesi</span>
+                        <h4 lang="tr">Kocaeli Üniversitesi öğrencisinden TRT yarışmasında büyük başarı</h4>
+                        <div class="press-meta"><span>October 13, 2026</span><span class="arrow">→</span></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -67,78 +170,85 @@
 
     <section id="experience">
         <div class="section-container">
-            <h2>Experience & Education</h2>
-            <p class="subtitle">My career journey and academic background.</p>
-            
+            <div class="section-label" data-reveal="left">03 — Experience</div>
+            <h2 class="reveal-heading"><span>Experience & <span class="highlight">Education</span></span></h2>
+            <p class="subtitle" data-reveal="up">My career journey and academic background.</p>
+
             <div class="timeline-grid">
-                <!-- Deneyim Sütunu -->
+                <!-- Experience column -->
                 <div class="timeline-column">
-                    <h3><span class="highlight">Experience</span></h3>
-                    
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Experience</div>
-                        <div class="timeline-content">
-                            <h4>Starbucks TR & 911 Ajans</h4>
-                            <p>Participation and acting experience in commercial shoots for Starbucks Turkey with 911 Agency.</p>
-                        </div>
-                    </div>
+                    <h3 data-reveal="up"><span class="highlight">Experience</span></h3>
+                    <div class="timeline">
+                        <div class="timeline-fill"></div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Feb 2026 - Jun 2026</div>
-                        <div class="timeline-content">
-                            <h4>Burger Schön</h4>
-                            <p><a href="https://www.instagram.com/schonkampus/" target="_blank" style="color: var(--accent-color); text-decoration: none;">@schonkampus</a> Content creation and Reels video editing for Instagram pages.</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Commercial Shoot</div>
+                            <div class="timeline-content">
+                                <h4>Starbucks TR & 911 Ajans</h4>
+                                <p>Took part and acted in commercial shoots for Starbucks Turkey with 911 Agency.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Jul 2025 - Aug 2025</div>
-                        <div class="timeline-content">
-                            <h4>TÜBİTAK</h4>
-                            <p>Medya ve Dijital Contact Müdürlüğü'nde Stajyer</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Feb 2026 - Jun 2026</div>
+                            <div class="timeline-content">
+                                <h4>Burger Schön</h4>
+                                <p>Content creation and Reels video editing for the <a href="https://www.instagram.com/schonkampus/" target="_blank" rel="noopener" class="inline-link">@schonkampus</a> Instagram page.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Feb 2025 - Jun 2025</div>
-                        <div class="timeline-content">
-                            <h4>Kurumsal Contact Ofisi</h4>
-                            <p>Kocaeli Üniversitesi Kurumsal Contact Ofisi Tasarım Biriminde Kısmi Zamanlı Çalışan</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Jul 2025 - Aug 2025</div>
+                            <div class="timeline-content">
+                                <h4>TÜBİTAK</h4>
+                                <p>Intern at the Directorate of Media and Digital Communication</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">2019 - 2022</div>
-                        <div class="timeline-content">
-                            <h4>Freelancer</h4>
-                            <p>Freelance logo and corporate identity design</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Feb 2025 - Jun 2025</div>
+                            <div class="timeline-content">
+                                <h4>Corporate Communications Office</h4>
+                                <p>Part-time employee in the Design Unit of Kocaeli University's Corporate Communications Office</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">2019 - 2022</div>
+                            <div class="timeline-content">
+                                <h4>Freelancer</h4>
+                                <p>Freelance logo and corporate identity design</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Eğitim Sütunu -->
+                <!-- Education column -->
                 <div class="timeline-column">
-                    <h3><span class="highlight">Education & Communities</span></h3>
-                    
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">2023 - Present</div>
-                        <div class="timeline-content">
-                            <h4>Kocaeli Üniversitesi</h4>
-                            <p>Advertising Department</p>
-                            <ul class="timeline-list">
-                                <li>President of Advertising Club</li>
-                                <li>Reklam Ajansı (Koraj) Video Editing Birimi Başkanlığı ve Website Editörlüğü</li>
-                                <li>Genç Kızılay KOÜ Kulübü Kurumsal Contact Birimi Üyesi (3 Dönem)</li>
-                                <li>Social Media Manager at AKUT KOU Community (1 Term)</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h3 data-reveal="up"><span class="highlight">Education & Communities</span></h3>
+                    <div class="timeline">
+                        <div class="timeline-fill"></div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">2019 - 2023</div>
-                        <div class="timeline-content">
-                            <h4>Etlik Anadolu Lisesi</h4>
-                            <p>High School Education</p>
+                        <div class="timeline-item glass-card" data-reveal="right">
+                            <div class="timeline-date">2023 - Present</div>
+                            <div class="timeline-content">
+                                <h4>Kocaeli University</h4>
+                                <p>Faculty of Communication, Department of Advertising</p>
+                                <ul class="timeline-list">
+                                    <li>President of the Advertising Club</li>
+                                    <li>Head of the Video Editing Unit and Website Editor at the advertising agency (Koraj)</li>
+                                    <li>Member of the Corporate Communications Unit, Genç Kızılay KOÜ Club (3 Terms)</li>
+                                    <li>Social Media Manager at AKUT KOÜ Community (1 Term)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-card" data-reveal="right">
+                            <div class="timeline-date">2019 - 2023</div>
+                            <div class="timeline-content">
+                                <h4>Etlik Anatolian High School</h4>
+                                <p>High School Education</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,9 +258,14 @@
 
     <section id="portfolio">
         <div class="section-container">
-            
-            <!-- Alt Menü -->
-            <div class="portfolio-nav">
+            <div class="portfolio-head">
+                <div class="section-label" data-reveal="left">04 — Portfolio</div>
+                <h2 class="reveal-heading"><span>Selected <span class="highlight">work.</span></span></h2>
+                <p class="subtitle" data-reveal="up">From brand collaborations to personal content, mobile apps to design practice.</p>
+            </div>
+
+            <!-- Sub menu -->
+            <div class="portfolio-nav" data-reveal="up">
                 <a href="#marka" class="nav-btn">Brand Collaborations</a>
                 <a href="#koraj" class="nav-btn">Koraj Projects</a>
                 <a href="#baho" class="nav-btn">baho.mp4 Content</a>
@@ -158,28 +273,28 @@
                 <a href="#pratik" class="nav-btn">Design Practices</a>
             </div>
 
-            <!-- Brand Collaborations & Projeler -->
+            <!-- Brand Collaborations & Creative Projects -->
             <div id="marka" class="portfolio-category">
-                <h2>Brand Collaborations & Kreatif Projeler</h2>
-                <p class="subtitle">Content, edits, and projects created for brands like Burger Schön and Starbucks TR.</p>
-                <div class="video-grid">
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DSc8pcOjOQ4/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DWosyIJjNVA/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/reel/DMz-QQwNUcd/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                <h2 class="reveal-heading"><span>Brand Collaborations & Creative Projects</span></h2>
+                <p class="subtitle" data-reveal="up">Content, edits, and projects created for brands like Burger Schön and Starbucks TR.</p>
+                <div class="video-grid" data-stagger="0.12">
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DSc8pcOjOQ4/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DWosyIJjNVA/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/reel/DMz-QQwNUcd/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </div>
 
             <div class="divider"></div>
 
-            <!-- Koraj Atölye Çalışmaları -->
+            <!-- Koraj Workshop Projects -->
             <div id="koraj" class="portfolio-category">
-                <h2>Koraj Workshop Projects</h2>
-                <p class="subtitle">Kocaeli Üniversitesi Reklam Ajansı'nda (Koraj) Video Editing Birim Başkanı olarak yaptığım birkaç video.</p>
-                <div class="video-grid">
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DJeEVzMM4oi/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DMvYpWDMexZ/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DQUkyUsDOHr/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DP9D6k-DK1r/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                <h2 class="reveal-heading"><span>Koraj Workshop Projects</span></h2>
+                <p class="subtitle" data-reveal="up">A few videos I made as Head of the Video Editing Unit at Kocaeli University's advertising agency, Koraj.</p>
+                <div class="video-grid" data-stagger="0.12">
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DJeEVzMM4oi/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DMvYpWDMexZ/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DQUkyUsDOHr/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DP9D6k-DK1r/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </div>
 
@@ -187,31 +302,31 @@
 
             <!-- baho.mp4 Content -->
             <div id="baho" class="portfolio-category">
-                <h2>baho.mp4 Contentm</h2>
-                <p class="subtitle">Creative video content produced on my personal Instagram account (@baho.mp4).</p>
-                <div class="video-grid">
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DXkDoYnCAzc/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DRr7aQBAl-c/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DMPxpTbCtS6/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DJuL3BYihOL/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                <h2 class="reveal-heading"><span>baho.mp4 Content</span></h2>
+                <p class="subtitle" data-reveal="up">Creative video content produced on my personal Instagram account (<a href="https://www.instagram.com/baho.mp4/" target="_blank" rel="noopener" class="inline-link">@baho.mp4</a>).</p>
+                <div class="video-grid" data-stagger="0.12">
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DXkDoYnCAzc/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DRr7aQBAl-c/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DMPxpTbCtS6/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram post" loading="lazy" src="https://www.instagram.com/p/DJuL3BYihOL/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </div>
 
             <div class="divider"></div>
 
-            <!-- Mobile App Dev -->
+            <!-- Mobile App Development -->
             <div id="mobil" class="portfolio-category">
-                <h2>Mobile App Dev</h2>
-                <p class="subtitle">After a few initial mobile app experiments, I continue working to develop more functional applications with high potential.</p>
-                <div class="app-grid">
-                    <a href="https://play.google.com/store/apps/dev?id=5616669249679697793&hl=tr" target="_blank" class="app-card glass-card">
+                <h2 class="reveal-heading"><span>Mobile App Development</span></h2>
+                <p class="subtitle" data-reveal="up">After a few initial mobile app experiments, I continue working to develop more functional applications with high potential.</p>
+                <div class="app-grid" data-stagger="0.12">
+                    <a href="https://play.google.com/store/apps/dev?id=5616669249679697793&hl=en" target="_blank" rel="noopener" class="app-card glass-card" data-scrub="tilt">
                         <div class="app-icon">Y</div>
                         <div class="app-info">
                             <h3>Yamo</h3>
                             <p>Google Play Developer Page</p>
                         </div>
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.yamo.snake_ultimate_last&hl=tr" target="_blank" class="app-card glass-card">
+                    <a href="https://play.google.com/store/apps/details?id=com.yamo.snake_ultimate_last&hl=en" target="_blank" rel="noopener" class="app-card glass-card" data-scrub="tilt">
                         <div class="app-icon">🐍</div>
                         <div class="app-info">
                             <h3>Snake Ultimate</h3>
@@ -220,50 +335,45 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <div class="divider"></div>
-
-            <!-- Akademik Çalışmalar -->
-            <div id="pratik" class="portfolio-category">
-                <h2>Design Practices & Konseptler</h2>
-                <p class="subtitle">Visualization assignments prepared during my university education.</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="gorseller/2.hafta.png" alt="Proje 1" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">View</span>
-                        </div>
+        <!-- Design Practices: gallery slides sideways as you scroll down -->
+        <div id="pratik" class="portfolio-category hscroll">
+            <div class="hscroll-sticky">
+                <div class="hscroll-head">
+                    <h2 class="reveal-heading"><span>Design Practices & Concepts</span></h2>
+                    <p class="subtitle" data-reveal="up">Visualization assignments prepared during my university education.</p>
+                </div>
+                <div class="hscroll-track">
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Enlarge project 1">
+                        <img src="gorseller/web/hafta-2.jpg" alt="Design practice 1" width="1800" height="2398">
+                        <div class="overlay"><span class="view-text">View</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/3.hafta.png" alt="Proje 2" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">View</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Enlarge project 2">
+                        <img src="gorseller/web/hafta-3.jpg" alt="Design practice 2" width="1800" height="1272">
+                        <div class="overlay"><span class="view-text">View</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/5.hafta - Kopya.png" alt="Proje 3" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">View</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Enlarge project 3">
+                        <img src="gorseller/web/hafta-5.jpg" alt="Design practice 3" width="1080" height="1350">
+                        <div class="overlay"><span class="view-text">View</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/6. hafta.png" alt="Proje 4" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">View</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Enlarge project 4">
+                        <img src="gorseller/web/hafta-6.jpg" alt="Design practice 4" width="1800" height="1272">
+                        <div class="overlay"><span class="view-text">View</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/7.HAFTA.png" alt="Proje 5" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">View</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Enlarge project 5">
+                        <img src="gorseller/web/hafta-7.jpg" alt="Design practice 5" width="1400" height="2100">
+                        <div class="overlay"><span class="view-text">View</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/8.hafta - Kopya.png" alt="Proje 6" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">View</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Enlarge project 6">
+                        <img src="gorseller/web/hafta-8.jpg" alt="Design practice 6" width="1400" height="2100">
+                        <div class="overlay"><span class="view-text">View</span></div>
                     </div>
+                </div>
+                <div class="hscroll-counter">
+                    <span class="hscroll-current">01</span>
+                    <div class="hscroll-bar"><span></span></div>
+                    <span>06</span>
                 </div>
             </div>
         </div>
@@ -271,10 +381,11 @@
 
     <section id="contact">
         <div class="section-container">
-            <div class="contact-card glass-card">
-                <h2>Let's Work Together</h2>
-                <p>Do you have a new project? Or just want to say hi? Contact me!</p>
-                <p style="font-weight: 600; margin-bottom: 1rem; color: var(--text-primary);">bahattinyaman0518@gmail.com</p>
+            <div class="contact-card glass-card" data-scrub="zoom">
+                <div class="section-label">05 — Contact</div>
+                <h2 class="reveal-heading"><span>Let's Work <span class="highlight">Together</span></span></h2>
+                <p>Have a new project? Or just want to say hi? Get in touch!</p>
+                <p class="contact-email">bahattinyaman0518@gmail.com</p>
                 <a href="mailto:bahattinyaman0518@gmail.com" class="cta-button primary">Send Me an Email</a>
             </div>
         </div>
@@ -285,9 +396,9 @@
     </footer>
 
     <!-- Lightbox for Image Viewing -->
-    <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="close" aria-label="Close">&times;</button>
+        <img class="lightbox-content" id="lightbox-img" alt="">
     </div>
 
     <script src="script.js"></script>

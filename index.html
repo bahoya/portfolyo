@@ -4,62 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahattin Yaman | Portfolyo</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Bahattin Yaman — Reklamcı, video editör ve geliştirici. TRT Geleceğin İletişimcileri Yarışması Dijital Yayıncılık kategorisi birincisi.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%238b5cf6'/><text x='50' y='68' font-size='56' font-family='Arial' font-weight='bold' text-anchor='middle' fill='white'>B</text></svg>">
+    <link rel="alternate" hreflang="en" href="index-en.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="scroll-progress"></div>
+
     <nav>
-        <div class="logo">Bahattin Yaman.</div>
+        <a href="#hero" class="logo">Bahattin Yaman<span>.</span></a>
         <ul class="nav-links">
             <li><a href="#hero">Ana Sayfa</a></li>
             <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#award">Ödül</a></li>
             <li><a href="#experience">Deneyimlerim</a></li>
             <li><a href="#portfolio">İşlerim</a></li>
             <li><a href="#contact">İletişim</a></li>
         </ul>
-        <div class="lang-switch">
-            <a href="index-en.html" class="lang-btn">EN</a>
+        <div class="nav-right">
+            <a href="index-en.html" class="lang-btn" lang="en">EN</a>
+            <button class="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
     <section id="hero">
-        <div class="hero-content">
-            <h1>Teknolojiyle <br><span class="highlight">Tasarlıyorum.</span></h1>
-            <p>Merhaba! Ben Bahattin Yaman. Reklamcı, Video Editör ve Geliştiriciyim.</p>
-            <a href="#portfolio" class="cta-button">Çalışmalarımı Gör</a>
-        </div>
-        <div class="hero-image-container glass-card">
-            <img src="gorseller/profil.jpg" alt="Bahattin Yaman" class="hero-profile-img">
-        </div>
         <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+            <div class="shape shape-1" data-speed="0.12"></div>
+            <div class="shape shape-2" data-speed="0.06"></div>
+            <div class="shape shape-3" data-speed="-0.05"></div>
+        </div>
+        <div class="hero-content">
+            <h1>
+                <span class="split-line"><span>Teknolojiyle</span></span>
+                <span class="split-line"><span class="highlight">Tasarlıyorum.</span></span>
+            </h1>
+            <p data-reveal="up" style="--delay: 0.3s">Reklamcı, Video Editör ve Geliştirici. Fikirleri hikâyeye, hikâyeleri ekrana taşıyorum.</p>
+            <div class="cta-row" data-reveal="up" style="--delay: 0.45s">
+                <a href="#portfolio" class="cta-button primary">Çalışmalarımı Gör</a>
+                <a href="#contact" class="cta-button">İletişime Geç</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint" aria-label="Aşağı kaydır">
+            <span class="mouse"></span>
+            Kaydır
+        </a>
+    </section>
+
+    <section class="hero-photo" aria-label="Bahattin Yaman">
+        <img src="gorseller/web/profil-xl.jpg" alt="Bahattin Yaman" width="1800" height="1718">
+        <div class="hero-caption">
+            <h2>Merhaba, ben <span class="highlight">Bahattin.</span></h2>
+            <p>Kocaeli Üniversitesi · Reklamcılık</p>
+        </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-row" data-direction="left">
+            <span>Video Kurgu</span><span>Grafik Tasarım</span><span>İçerik Üretimi</span><span>Mobil Uygulama</span><span>Sosyal Medya</span>
+            <span>Video Kurgu</span><span>Grafik Tasarım</span><span>İçerik Üretimi</span><span>Mobil Uygulama</span><span>Sosyal Medya</span>
+            <span>Video Kurgu</span><span>Grafik Tasarım</span><span>İçerik Üretimi</span><span>Mobil Uygulama</span><span>Sosyal Medya</span>
+        </div>
+        <div class="marquee-row outline" data-direction="right">
+            <span>Reklamcılık</span><span>Dijital Yayıncılık</span><span>Reels</span><span>Kreatif Strateji</span><span>Kurumsal Kimlik</span>
+            <span>Reklamcılık</span><span>Dijital Yayıncılık</span><span>Reels</span><span>Kreatif Strateji</span><span>Kurumsal Kimlik</span>
+            <span>Reklamcılık</span><span>Dijital Yayıncılık</span><span>Reels</span><span>Kreatif Strateji</span><span>Kurumsal Kimlik</span>
+        </div>
+    </div>
+
+    <section class="statement pin" style="--pin-h: 220vh" aria-label="Kısaca ben">
+        <div class="pin-stage">
+            <p class="statement-text" data-accent="teknolojiyle,hikâyeler">Video kurgudan grafik tasarıma, sosyal medyadan mobil uygulamalara kadar kreatif fikirleri teknolojiyle buluşturup akılda kalan hikâyeler üretiyorum.</p>
         </div>
     </section>
 
     <section id="about">
         <div class="section-container">
-            <h2>Hakkımda</h2>
+            <div class="section-label" data-reveal="left">01 — Hakkımda</div>
+            <h2 class="reveal-heading"><span>Kreatif fikir, <span class="highlight">teknik uygulama.</span></span></h2>
             <div class="about-grid">
-                <div class="about-text glass-card">
+                <div class="about-text glass-card" data-scrub="rise">
                     <h3>Reklamcı, Video Editör & Geliştirici</h3>
-                    <p>Merhaba! Ben Bahattin Yaman, 21 yaşındayım ve Reklamcılık 3. sınıf öğrencisiyim. Video kurgudan mobil uygulama geliştirmeye kadar geniş bir yelpazede teknoloji ve tasarımı kullanan bir içerik üreticisiyim. Kocaeli Üniversitesi'ndeki eğitimim süresince kreatif süreçlerin hem yönetim hem de uygulama aşamalarında aktif rol alıyorum. Gerek gönüllü kulüp çalışmaları gerekse okulumuzda yaptığımız işbirliklerde üstlendiğim görevler ile teknik yetkinliklerimi ve edindiğim bu çok yönlü tecrübeleri işlerimde kullanmayı hedefliyorum.</p>
-                </div>
-                <div class="skills glass-card">
-                    <h3>Yetenekler</h3>
-                    <div class="skill-tags">
-                        <span>Video Kurgu</span>
-                        <span>Grafik Tasarım</span>
-                        <span>Mobil Uygulama Geliştirme</span>
-                        <span>İçerik Üretimi</span>
-                        <span>Adobe Premiere Pro</span>
-                        <span>Adobe Photoshop</span>
-                        <span>Adobe After Effects</span>
+                    <p>Merhaba! Ben Bahattin Yaman, Kocaeli Üniversitesi İletişim Fakültesi Reklamcılık Bölümü 4. sınıf öğrencisiyim. Video kurgudan mobil uygulama geliştirmeye kadar geniş bir yelpazede teknoloji ve tasarımı kullanan bir içerik üreticisiyim. Eğitimim süresince kreatif süreçlerin hem yönetim hem de uygulama aşamalarında aktif rol alıyorum. Gerek gönüllü kulüp çalışmaları gerekse okulumuzda yaptığımız iş birliklerinde üstlendiğim görevler ile teknik yetkinliklerimi ve edindiğim bu çok yönlü tecrübeleri işlerimde kullanmayı hedefliyorum.</p>
+                    <div class="stats" data-stagger="0.12">
+                        <div class="stat" data-reveal="up"><strong class="highlight">1</strong><span>Ödül</span></div>
+                        <div class="stat" data-reveal="up"><strong class="highlight">7+</strong><span>Yıl tasarım deneyimi</span></div>
+                        <div class="stat" data-reveal="up"><strong class="highlight">4</strong><span>Kulüp & topluluk görevi</span></div>
                     </div>
+                </div>
+                <div class="skills glass-card" data-scrub="rise">
+                    <h3>Yetenekler</h3>
+                    <div class="skill-tags" data-stagger="0.06">
+                        <span data-reveal="scale">Video Kurgu</span>
+                        <span data-reveal="scale">Grafik Tasarım</span>
+                        <span data-reveal="scale">Sosyal Medya Yönetimi</span>
+                        <span data-reveal="scale">Mobil Uygulama Geliştirme</span>
+                        <span data-reveal="scale">İçerik Üretimi</span>
+                        <span data-reveal="scale">Adobe Premiere Pro</span>
+                        <span data-reveal="scale">Adobe Photoshop</span>
+                        <span data-reveal="scale">Adobe After Effects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="award-scene" class="pin" style="--pin-h: 280vh">
+        <div id="award" class="pin-anchor" style="top: 155vh"></div>
+        <div class="pin-stage">
+            <div class="award-glow"></div>
+            <div class="award-stage">
+                <div class="section-label award-label">02 — Ödül</div>
+                <div class="award-rank">1.</div>
+                <div class="award-seq">
+                    <span class="award-place">Birincilik</span>
+                    <h3>TRT Geleceğin İletişimcileri Yarışması</h3>
+                    <span class="award-category">Dijital Yayıncılık · Sosyal Medya Yönetimi · 2026</span>
+                    <p>Sosyal medya yönetimi alanında hazırladığım <strong>Dakikada KPSS</strong> Instagram hesabı projemle, TRT'nin düzenlediği yarışmanın Dijital Yayıncılık kategorisinde <strong>birinciliğe</strong> layık görüldüm.</p>
+                    <div><a href="https://www.instagram.com/dakikadakpss/" target="_blank" rel="noopener" class="cta-button gold">@dakikadakpss'i İncele →</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="press">
+        <div class="section-container">
+            <figure class="award-photo" data-scrub="expand">
+                <img src="gorseller/web/odul-toreni.jpg" alt="Bahattin Yaman, TRT Geleceğin İletişimcileri ödül töreninde birincilik ödülünü alırken" width="1657" height="945" loading="lazy">
+                <figcaption>Ödülümü seçici kurul üyesi Kaan Gülten'den aldım · TRT Geleceğin İletişimcileri ödül töreni, Ankara</figcaption>
+            </figure>
+
+            <div class="press-title" data-reveal="up">Basında</div>
+            <div class="press-marquee" data-reveal="up">
+                <div class="press-track">
+                    <a href="https://www.aa.com.tr/tr/gundem/trtnin-gelecegin-iletisimcileri-yarismasinda-oduller-sahiplerini-buldu/4087899" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Anadolu Ajansı</span>
+                        <h4>TRT'nin "Geleceğin İletişimcileri Yarışması"nda ödüller sahiplerini buldu</h4>
+                        <div class="press-meta"><span>14 Ekim 2026</span><span class="arrow">→</span></div>
+                    </a>
+                    <a href="https://www.bizimyaka.com/makale/28996640/galip-ataman/trtnin-birincilik-odulu-genc-iletisimci-bahattinin" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Bizim Yaka · Galip Ataman</span>
+                        <h4>TRT'nin Birincilik Ödülü genç iletişimci Bahattin'in</h4>
+                        <div class="press-meta"><span>16 Ekim 2026</span><span class="arrow">→</span></div>
+                    </a>
+                    <a href="https://www.cagdaskocaeli.com.tr/haber/28979223/trt-gelecegin-iletisimcileri-yarismasinda-zirve-kounun-bahattin-yaman-birinci-oldu" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Çağdaş Kocaeli</span>
+                        <h4>TRT Geleceğin İletişimcileri Yarışması'nda zirve KOÜ'nün: Bahattin Yaman birinci oldu!</h4>
+                        <div class="press-meta"><span>14 Ekim 2026</span><span class="arrow">→</span></div>
+                    </a>
+                    <a href="https://www.noktagazetesi.com.tr/kocaeli-gundem-haberleri/kocaeli-universitesi-ogrencisinden-trt-yarismasinda-buyuk-basari-389069" target="_blank" rel="noopener" class="press-card glass-card">
+                        <span class="press-source">Nokta Gazetesi</span>
+                        <h4>Kocaeli Üniversitesi öğrencisinden TRT yarışmasında büyük başarı</h4>
+                        <div class="press-meta"><span>13 Ekim 2026</span><span class="arrow">→</span></div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -67,78 +170,85 @@
 
     <section id="experience">
         <div class="section-container">
-            <h2>Deneyim ve Eğitim</h2>
-            <p class="subtitle">Kariyer yolculuğum ve akademik geçmişim.</p>
-            
+            <div class="section-label" data-reveal="left">03 — Deneyim</div>
+            <h2 class="reveal-heading"><span>Deneyim ve <span class="highlight">Eğitim</span></span></h2>
+            <p class="subtitle" data-reveal="up">Kariyer yolculuğum ve akademik geçmişim.</p>
+
             <div class="timeline-grid">
                 <!-- Deneyim Sütunu -->
                 <div class="timeline-column">
-                    <h3><span class="highlight">Deneyim</span></h3>
-                    
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Deneyim</div>
-                        <div class="timeline-content">
-                            <h4>Starbucks TR & 911 Ajans</h4>
-                            <p>Starbucks Türkiye hesabı için 911 Ajans ile gerçekleştirilen çekimlere katılım ve oyunculuk deneyimi.</p>
-                        </div>
-                    </div>
+                    <h3 data-reveal="up"><span class="highlight">Deneyim</span></h3>
+                    <div class="timeline">
+                        <div class="timeline-fill"></div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Şubat 2026 - Haziran 2026</div>
-                        <div class="timeline-content">
-                            <h4>Burger Schön</h4>
-                            <p><a href="https://www.instagram.com/schonkampus/" target="_blank" style="color: var(--accent-color); text-decoration: none;">@schonkampus</a> Instagram sayfaları için içerik üretimi ve Reels video kurguları.</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Reklam Çekimi</div>
+                            <div class="timeline-content">
+                                <h4>Starbucks TR & 911 Ajans</h4>
+                                <p>Starbucks Türkiye hesabı için 911 Ajans ile gerçekleştirilen çekimlere katılım ve oyunculuk deneyimi.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Temmuz 2025 - Ağustos 2025</div>
-                        <div class="timeline-content">
-                            <h4>TÜBİTAK</h4>
-                            <p>Medya ve Dijital İletişim Müdürlüğü'nde Stajyer</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Şubat 2026 - Haziran 2026</div>
+                            <div class="timeline-content">
+                                <h4>Burger Schön</h4>
+                                <p><a href="https://www.instagram.com/schonkampus/" target="_blank" rel="noopener" class="inline-link">@schonkampus</a> Instagram sayfaları için içerik üretimi ve Reels video kurguları.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">Şubat 2025 - Haziran 2025</div>
-                        <div class="timeline-content">
-                            <h4>Kurumsal İletişim Ofisi</h4>
-                            <p>Kocaeli Üniversitesi Kurumsal İletişim Ofisi Tasarım Biriminde Kısmi Zamanlı Çalışan</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Temmuz 2025 - Ağustos 2025</div>
+                            <div class="timeline-content">
+                                <h4>TÜBİTAK</h4>
+                                <p>Medya ve Dijital İletişim Müdürlüğü'nde Stajyer</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">2019 - 2022</div>
-                        <div class="timeline-content">
-                            <h4>Freelancer</h4>
-                            <p>Freelancer olarak logo, kurumsal kimlik çalışmaları</p>
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">Şubat 2025 - Haziran 2025</div>
+                            <div class="timeline-content">
+                                <h4>Kurumsal İletişim Ofisi</h4>
+                                <p>Kocaeli Üniversitesi Kurumsal İletişim Ofisi Tasarım Biriminde Kısmi Zamanlı Çalışan</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-card" data-reveal="left">
+                            <div class="timeline-date">2019 - 2022</div>
+                            <div class="timeline-content">
+                                <h4>Freelancer</h4>
+                                <p>Freelancer olarak logo, kurumsal kimlik çalışmaları</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Eğitim Sütunu -->
                 <div class="timeline-column">
-                    <h3><span class="highlight">Eğitim & Topluluklar</span></h3>
-                    
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">2023 - Devam</div>
-                        <div class="timeline-content">
-                            <h4>Kocaeli Üniversitesi</h4>
-                            <p>Reklamcılık Bölümü</p>
-                            <ul class="timeline-list">
-                                <li>Reklamcılık Kulübü Başkanlığı</li>
-                                <li>Reklam Ajansı (Koraj) Video Kurgu Birimi Başkanlığı ve Website Editörlüğü</li>
-                                <li>Genç Kızılay KOÜ Kulübü Kurumsal İletişim Birimi Üyesi (3 Dönem)</li>
-                                <li>AKUT KOÜ Topluluğu Sosyal Medya Birim Sorumlusu (1 Dönem)</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h3 data-reveal="up"><span class="highlight">Eğitim & Topluluklar</span></h3>
+                    <div class="timeline">
+                        <div class="timeline-fill"></div>
 
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">2019 - 2023</div>
-                        <div class="timeline-content">
-                            <h4>Etlik Anadolu Lisesi</h4>
-                            <p>Lise Eğitimi</p>
+                        <div class="timeline-item glass-card" data-reveal="right">
+                            <div class="timeline-date">2023 - Devam</div>
+                            <div class="timeline-content">
+                                <h4>Kocaeli Üniversitesi</h4>
+                                <p>İletişim Fakültesi, Reklamcılık Bölümü</p>
+                                <ul class="timeline-list">
+                                    <li>Reklamcılık Kulübü Başkanlığı</li>
+                                    <li>Reklam Ajansı (Koraj) Video Kurgu Birimi Başkanlığı ve Website Editörlüğü</li>
+                                    <li>Genç Kızılay KOÜ Kulübü Kurumsal İletişim Birimi Üyesi (3 Dönem)</li>
+                                    <li>AKUT KOÜ Topluluğu Sosyal Medya Birim Sorumlusu (1 Dönem)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-card" data-reveal="right">
+                            <div class="timeline-date">2019 - 2023</div>
+                            <div class="timeline-content">
+                                <h4>Etlik Anadolu Lisesi</h4>
+                                <p>Lise Eğitimi</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,24 +258,29 @@
 
     <section id="portfolio">
         <div class="section-container">
-            
+            <div class="portfolio-head">
+                <div class="section-label" data-reveal="left">04 — İşlerim</div>
+                <h2 class="reveal-heading"><span>Seçili <span class="highlight">çalışmalar.</span></span></h2>
+                <p class="subtitle" data-reveal="up">Marka iş birliklerinden kişisel içeriklere, mobil uygulamalardan tasarım pratiklerine.</p>
+            </div>
+
             <!-- Alt Menü -->
-            <div class="portfolio-nav">
-                <a href="#marka" class="nav-btn">Marka İşbirlikleri</a>
+            <div class="portfolio-nav" data-reveal="up">
+                <a href="#marka" class="nav-btn">Marka İş Birlikleri</a>
                 <a href="#koraj" class="nav-btn">Koraj Çalışmaları</a>
                 <a href="#baho" class="nav-btn">baho.mp4 İçerikleri</a>
                 <a href="#mobil" class="nav-btn">Mobil Uygulamalar</a>
                 <a href="#pratik" class="nav-btn">Tasarım Pratikleri</a>
             </div>
 
-            <!-- Marka İşbirlikleri & Projeler -->
+            <!-- Marka İş Birlikleri & Projeler -->
             <div id="marka" class="portfolio-category">
-                <h2>Marka İşbirlikleri & Kreatif Projeler</h2>
-                <p class="subtitle">Burger Schön, Starbucks TR gibi markalar için üretilen içerikler, kurgular ve dahil olunan projeler.</p>
-                <div class="video-grid">
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DSc8pcOjOQ4/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DWosyIJjNVA/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/reel/DMz-QQwNUcd/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                <h2 class="reveal-heading"><span>Marka İş Birlikleri & Kreatif Projeler</span></h2>
+                <p class="subtitle" data-reveal="up">Burger Schön, Starbucks TR gibi markalar için üretilen içerikler, kurgular ve dahil olunan projeler.</p>
+                <div class="video-grid" data-stagger="0.12">
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DSc8pcOjOQ4/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DWosyIJjNVA/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/reel/DMz-QQwNUcd/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </div>
 
@@ -173,13 +288,13 @@
 
             <!-- Koraj Atölye Çalışmaları -->
             <div id="koraj" class="portfolio-category">
-                <h2>Koraj Atölye Çalışmalarım</h2>
-                <p class="subtitle">Kocaeli Üniversitesi Reklam Ajansı'nda (Koraj) Video Kurgu Birim Başkanı olarak yaptığım birkaç video.</p>
-                <div class="video-grid">
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DJeEVzMM4oi/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DMvYpWDMexZ/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DQUkyUsDOHr/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DP9D6k-DK1r/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                <h2 class="reveal-heading"><span>Koraj Atölye Çalışmalarım</span></h2>
+                <p class="subtitle" data-reveal="up">Kocaeli Üniversitesi Reklam Ajansı'nda (Koraj) Video Kurgu Birim Başkanı olarak yaptığım birkaç video.</p>
+                <div class="video-grid" data-stagger="0.12">
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DJeEVzMM4oi/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DMvYpWDMexZ/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DQUkyUsDOHr/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DP9D6k-DK1r/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </div>
 
@@ -187,13 +302,13 @@
 
             <!-- baho.mp4 İçerikleri -->
             <div id="baho" class="portfolio-category">
-                <h2>baho.mp4 İçeriklerim</h2>
-                <p class="subtitle">Kişisel Instagram hesabımda (@baho.mp4) ürettiğim yaratıcı video içeriklerim.</p>
-                <div class="video-grid">
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DXkDoYnCAzc/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DRr7aQBAl-c/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DMPxpTbCtS6/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-                    <iframe class="ig-embed" src="https://www.instagram.com/p/DJuL3BYihOL/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                <h2 class="reveal-heading"><span>baho.mp4 İçeriklerim</span></h2>
+                <p class="subtitle" data-reveal="up">Kişisel Instagram hesabımda (<a href="https://www.instagram.com/baho.mp4/" target="_blank" rel="noopener" class="inline-link">@baho.mp4</a>) ürettiğim yaratıcı video içeriklerim.</p>
+                <div class="video-grid" data-stagger="0.12">
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DXkDoYnCAzc/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DRr7aQBAl-c/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DMPxpTbCtS6/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    <iframe class="ig-embed" data-scrub="rise" title="Instagram gönderisi" loading="lazy" src="https://www.instagram.com/p/DJuL3BYihOL/embed/" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </div>
 
@@ -201,17 +316,17 @@
 
             <!-- Mobil Uygulama Geliştirme -->
             <div id="mobil" class="portfolio-category">
-                <h2>Mobil Uygulama Geliştirme</h2>
-                <p class="subtitle">Daha önce deneyimlediğim birkaç mobil uygulama denemesi sonrası daha işlevli ve potansiyele sahip uygulamaları geliştirmek için çalışmalarıma devam ediyorum.</p>
-                <div class="app-grid">
-                    <a href="https://play.google.com/store/apps/dev?id=5616669249679697793&hl=tr" target="_blank" class="app-card glass-card">
+                <h2 class="reveal-heading"><span>Mobil Uygulama Geliştirme</span></h2>
+                <p class="subtitle" data-reveal="up">Daha önce deneyimlediğim birkaç mobil uygulama denemesi sonrası daha işlevli ve potansiyele sahip uygulamaları geliştirmek için çalışmalarıma devam ediyorum.</p>
+                <div class="app-grid" data-stagger="0.12">
+                    <a href="https://play.google.com/store/apps/dev?id=5616669249679697793&hl=tr" target="_blank" rel="noopener" class="app-card glass-card" data-scrub="tilt">
                         <div class="app-icon">Y</div>
                         <div class="app-info">
                             <h3>Yamo</h3>
                             <p>Google Play Geliştirici Sayfası</p>
                         </div>
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.yamo.snake_ultimate_last&hl=tr" target="_blank" class="app-card glass-card">
+                    <a href="https://play.google.com/store/apps/details?id=com.yamo.snake_ultimate_last&hl=tr" target="_blank" rel="noopener" class="app-card glass-card" data-scrub="tilt">
                         <div class="app-icon">🐍</div>
                         <div class="app-info">
                             <h3>Snake Ultimate</h3>
@@ -220,50 +335,45 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <div class="divider"></div>
-
-            <!-- Akademik Çalışmalar -->
-            <div id="pratik" class="portfolio-category">
-                <h2>Tasarım Pratikleri & Konseptler</h2>
-                <p class="subtitle">Üniversite eğitimim boyunca hazırladığım görselleştirme ödevleri.</p>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="gorseller/2.hafta.png" alt="Proje 1" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">İncele</span>
-                        </div>
+        <!-- Tasarım Pratikleri: aşağı kaydırdıkça yatay kayan galeri -->
+        <div id="pratik" class="portfolio-category hscroll">
+            <div class="hscroll-sticky">
+                <div class="hscroll-head">
+                    <h2 class="reveal-heading"><span>Tasarım Pratikleri & Konseptler</span></h2>
+                    <p class="subtitle" data-reveal="up">Üniversite eğitimim boyunca hazırladığım görselleştirme ödevleri.</p>
+                </div>
+                <div class="hscroll-track">
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Proje 1'i büyüt">
+                        <img src="gorseller/web/hafta-2.jpg" alt="Tasarım pratiği 1" width="1800" height="2398">
+                        <div class="overlay"><span class="view-text">İncele</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/3.hafta.png" alt="Proje 2" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">İncele</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Proje 2'yi büyüt">
+                        <img src="gorseller/web/hafta-3.jpg" alt="Tasarım pratiği 2" width="1800" height="1272">
+                        <div class="overlay"><span class="view-text">İncele</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/5.hafta - Kopya.png" alt="Proje 3" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">İncele</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Proje 3'ü büyüt">
+                        <img src="gorseller/web/hafta-5.jpg" alt="Tasarım pratiği 3" width="1080" height="1350">
+                        <div class="overlay"><span class="view-text">İncele</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/6. hafta.png" alt="Proje 4" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">İncele</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Proje 4'ü büyüt">
+                        <img src="gorseller/web/hafta-6.jpg" alt="Tasarım pratiği 4" width="1800" height="1272">
+                        <div class="overlay"><span class="view-text">İncele</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/7.HAFTA.png" alt="Proje 5" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">İncele</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Proje 5'i büyüt">
+                        <img src="gorseller/web/hafta-7.jpg" alt="Tasarım pratiği 5" width="1400" height="2100">
+                        <div class="overlay"><span class="view-text">İncele</span></div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="gorseller/8.hafta - Kopya.png" alt="Proje 6" loading="lazy">
-                        <div class="overlay">
-                            <span class="view-text">İncele</span>
-                        </div>
+                    <div class="gallery-item" tabindex="0" role="button" aria-label="Proje 6'yı büyüt">
+                        <img src="gorseller/web/hafta-8.jpg" alt="Tasarım pratiği 6" width="1400" height="2100">
+                        <div class="overlay"><span class="view-text">İncele</span></div>
                     </div>
+                </div>
+                <div class="hscroll-counter">
+                    <span class="hscroll-current">01</span>
+                    <div class="hscroll-bar"><span></span></div>
+                    <span>06</span>
                 </div>
             </div>
         </div>
@@ -271,10 +381,11 @@
 
     <section id="contact">
         <div class="section-container">
-            <div class="contact-card glass-card">
-                <h2>Birlikte Çalışalım</h2>
+            <div class="contact-card glass-card" data-scrub="zoom">
+                <div class="section-label">05 — İletişim</div>
+                <h2 class="reveal-heading"><span>Birlikte <span class="highlight">Çalışalım</span></span></h2>
                 <p>Yeni bir projeniz mi var? Ya da sadece merhaba demek mi istiyorsunuz? Bana ulaşın!</p>
-                <p style="font-weight: 600; margin-bottom: 1rem; color: var(--text-primary);">bahattinyaman0518@gmail.com</p>
+                <p class="contact-email">bahattinyaman0518@gmail.com</p>
                 <a href="mailto:bahattinyaman0518@gmail.com" class="cta-button primary">Bana E-posta Gönder</a>
             </div>
         </div>
@@ -285,9 +396,9 @@
     </footer>
 
     <!-- Lightbox for Image Viewing -->
-    <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Görsel önizleme">
+        <button class="close" aria-label="Kapat">&times;</button>
+        <img class="lightbox-content" id="lightbox-img" alt="">
     </div>
 
     <script src="script.js"></script>
